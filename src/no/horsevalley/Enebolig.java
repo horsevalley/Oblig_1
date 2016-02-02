@@ -8,11 +8,21 @@ public class Enebolig extends Eiendom {
     public static final int REKKE = 2;
     public static final int TOMANNS = 3;
 
-    public String getTypeAsString(){
-        return "BLA";
+    public Enebolig(String addresse, String eiersNavn, double takst, int antKvm, int gnr, int bnr, int type) {
+        super(addresse,eiersNavn,takst,antKvm,gnr,bnr);
+        this.type = type;
     }
 
-    public void skrivAlleBud(){
-
+    public String getTypeAsString(){
+        switch (type) {
+            case 1:
+                return "Frittstaaende";
+            case 2:
+                return "Rekke";
+            case 3:
+                return "Tomanns";
+            default:
+                return "FEIL";
+        }
     }
 }

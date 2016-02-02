@@ -2,7 +2,16 @@ package no.horsevalley;
 
 
 public class TestEiendom {
+
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+
+        Enebolig eb1 = new Enebolig("Marihandstien 2", "Ole Joan Olsen", 1100000, 204,
+                23, 400, Enebolig.FRITTSTAAENDE);
+// Legger inn etpar bud
+        eb1.nyttBud("Ole Pedersen", 2400000, "90522355", 24);
+        eb1.nyttBud("John McIntosh", 2500000, "90822655", 12);
+// Lister alle bud
+        eb1.skrivAlleBud();
+
     }
 }
