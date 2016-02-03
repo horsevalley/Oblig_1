@@ -10,8 +10,12 @@ public class TestEiendom {
 // Legger inn etpar bud
         eb1.nyttBud("Ole Pedersen", 2400000, "90522355", 24);
         eb1.nyttBud("John McIntosh", 2500000, "90822655", 12);
+
 // Lister alle bud
         eb1.skrivAlleBud();
+        int count = -1;
+        int sum = 0;
+
 
     }
 }
