@@ -2,13 +2,6 @@ package no.horsevalley;
 
 import java.util.*;
 
-/*  (ArrayIndexOutOfBoundsException) Write a program that meets the fol- lowing requirements:
-    ■ Creates an array with 100 randomly chosen integers.
-    ■ Prompts the user to enter the index of the array, then displays the corre-
-    sponding element value. If the specified index is out of bounds, display the message Out of Bounds.
-*/
-
-
 public class ArrayIndexOutOfBoundsException {
 
     public static void main(String[] args) {
