@@ -1,8 +1,7 @@
-package no.horsevalley;
-
+package no.horsevalley.Oblig_1.Oppgave_2;
 
 import java.text.SimpleDateFormat;
-import java.util.GregorianCalendar;
+import java.util.*;
 
 public class Bud {
 
@@ -16,9 +15,8 @@ public class Bud {
         this.navn = navn;
         this.belop = belop;
         this.telefon = tel;
-        // this.budGitt = NOW() ; this.budFrist = budGitt + frist
         this.budGitt = new GregorianCalendar();
-        this.budFrist = budGitt;
+        this.budFrist = new GregorianCalendar();
         this.budFrist.add(GregorianCalendar.HOUR,frist);
     }
 

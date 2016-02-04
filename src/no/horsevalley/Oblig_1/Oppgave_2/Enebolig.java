@@ -1,4 +1,4 @@
-package no.horsevalley;
+package no.horsevalley.Oblig_1.Oppgave_2;
 
 
 public class Enebolig extends Eiendom {
@@ -25,4 +25,18 @@ public class Enebolig extends Eiendom {
                 return "FEIL";
         }
     }
+    @Override
+    public String toString() {
+        return String.format("Bud gitt for ENEBOLIG %s, takst = %s, " +
+                        "gnr = %s, bnr = %s, type = %s", getAdresse(), (int) getTakst(),
+                getGnr(), getBnr(), getTypeAsString());
+    }
+
+    @Override
+    public void skrivAlleBud() {
+        toString();
+        super.skrivAlleBud();
+    }
+
+
 }

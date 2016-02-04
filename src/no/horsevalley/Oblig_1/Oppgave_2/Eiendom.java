@@ -1,4 +1,4 @@
-package no.horsevalley;
+package no.horsevalley.Oblig_1.Oppgave_2;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,8 @@ public class Eiendom {
     private int antKvm;
     private int gnr;
     private int bnr;
-    private ArrayList<Bud> budOversikt = new ArrayList<Bud>();
+
+    ArrayList<Bud> budOversikt = new ArrayList<Bud>();
 
     public Eiendom(String addresse, String eiersNavn, double takst, int antKvm, int gnr, int bnr) {
         this.adresse = addresse;
@@ -26,7 +27,7 @@ public class Eiendom {
 
     public String getSisteBud() {
 
-        return "SisteBud";
+        return String.format("Siste bud: %s", budOversikt.get(budOversikt.size() - 1));
     }
 
     public String getAdresse() {
@@ -53,9 +54,6 @@ public class Eiendom {
         return bnr;
     }
 
-    public ArrayList<Bud> getBudOversikt() {
-        return budOversikt;
-    }
 
     public void skrivAlleBud() {
         System.out.println(this.toString());
